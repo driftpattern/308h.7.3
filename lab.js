@@ -24,8 +24,15 @@ class Hamster {
 }
 
 
-const myHamster = new Hamster('Mr. Fluff');
-console.log(myHamster.name);
-console.log(myHamster.getPrice());
-myHamster.wheelRun();
-myHamster.eatFood();
+function hamsterOperations(name) {
+    const myHamster = new Hamster(name);
+    console.log(myHamster.name);
+    console.log(myHamster.getPrice());
+    myHamster.wheelRun();
+    myHamster.eatFood();
+  }
+
+  
+hamsterOperations("Mr. Fluff");
+
+
